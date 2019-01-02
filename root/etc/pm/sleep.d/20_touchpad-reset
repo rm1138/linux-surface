@@ -1,0 +1,8 @@
+#!/bin/sh
+
+case "${1}" in
+    thaw)
+        rmmod hid_multitouch
+        modprobe hid_multitouch
+;;
+esac
